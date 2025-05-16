@@ -1,0 +1,229 @@
+{
+  "urdf_robot": {
+    "prefix": "robot",
+    "body": [
+      "<robot>",
+      "  $0",
+      "</robot>"
+    ],
+    "description": "URDF robot tag"
+  },
+  "urdf_link": {
+    "prefix": "link",
+    "body": [
+      "<link name=\"$1\">",
+      "  $0",
+      "</link>"
+    ],
+    "description": "URDF link tag"
+  },
+  "urdf_joint": {
+    "prefix": "joint",
+    "body": [
+      "<joint name=\"$1\" type=\"$2\">",
+      "  $0",
+      "</joint>"
+    ],
+    "description": "URDF joint tag"
+  },
+  "urdf_origin": {
+    "prefix": "origin",
+    "body": [
+      "<origin xyz=\"$1 0 0\" rpy=\"$2 0 0\"/>"
+    ],
+    "description": "URDF origin tag"
+  },
+  "urdf_axis": {
+    "prefix": "axis",
+    "body": [
+      "<axis xyz=\"$1 0 0\"/>"
+    ],
+    "description": "URDF axis tag"
+  },
+  "urdf_parent": {
+    "prefix": "parent",
+    "body": [
+      "<parent link=\"$1\"/>"
+    ],
+    "description": "URDF parent tag"
+  },
+  "urdf_child": {
+    "prefix": "child",
+    "body": [
+      "<child link=\"$1\"/>"
+    ],
+    "description": "URDF child tag"
+  },
+  "urdf_visual": {
+    "prefix": "visual",
+    "body": [
+      "<visual>",
+      "  $0",
+      "</visual>"
+    ],
+    "description": "URDF visual tag"
+  },
+  "urdf_collision": {
+    "prefix": "collision",
+    "body": [
+      "<collision>",
+      "  $0",
+      "</collision>"
+    ],
+    "description": "URDF collision tag"
+  },
+  "urdf_geometry": {
+    "prefix": "geometry",
+    "body": [
+      "<geometry>",
+      "  $0",
+      "</geometry>"
+    ],
+    "description": "URDF geometry tag"
+  },
+  "urdf_box": {
+    "prefix": "box",
+    "body": [
+      "<box size=\"$1 $2 $3\"/>"
+    ],
+    "description": "URDF box tag"
+  },
+  "urdf_cylinder": {
+    "prefix": "cylinder",
+    "body": [
+      "<cylinder radius=\"$1\" length=\"$2\"/>"
+    ],
+    "description": "URDF cylinder tag"
+  },
+  "urdf_sphere": {
+    "prefix": "sphere",
+    "body": [
+      "<sphere radius=\"$1\"/>"
+    ],
+    "description": "URDF sphere tag"
+  },
+  "urdf_mesh": {
+    "prefix": "mesh",
+    "body": [
+      "<mesh filename=\"$1\" scale=\"$2 $3 $4\"/>"
+    ],
+    "description": "URDF mesh tag"
+  },
+  "urdf_inertial": {
+    "prefix": "inertial",
+    "body": [
+      "<inertial>",
+      "  $0",
+      "</inertial>"
+    ],
+    "description": "URDF inertial tag"
+  },
+  "urdf_mass": {
+    "prefix": "mass",
+    "body": [
+      "<mass value=\"$1\"/>"
+    ],
+    "description": "URDF mass tag"
+  },
+  "urdf_inertia": {
+    "prefix": "inertia",
+    "body": [
+      "<inertia ixx=\"$1\" ixy=\"$2\" ixz=\"$3\" iyy=\"$4\" iyz=\"$5\" izz=\"$6\"/>"
+    ],
+    "description": "URDF inertia tag"
+  },
+  "urdf_material": {
+    "prefix": "material",
+    "body": [
+      "<material name=\"$1\">",
+      "  $0",
+      "</material>"
+    ],
+    "description": "URDF material tag"
+  },
+  "urdf_color": {
+    "prefix": "color",
+    "body": [
+      "<color rgba=\"$1 $2 $3 $4\"/>"
+    ],
+    "description": "URDF color tag"
+  },
+  "urdf_texture": {
+    "prefix": "texture",
+    "body": [
+      "<texture filename=\"$1\"/>"
+    ],
+    "description": "URDF texture tag"
+  },
+
+  "urdf_transmission": {
+    "prefix": "transmission",
+    "body": [
+      "<transmission name=\"$1\">",
+      "  <type>$2</type>",
+      "  <joint name=\"$3\"/>",
+      "  <actuator name=\"$4\"/>",
+      "</transmission>"
+    ],
+    "description": "URDF transmission tag"
+  },
+  "urdf_actuator": {
+    "prefix": "actuator",
+    "body": [
+      "<actuator name=\"$1\">",
+      "  $0",
+      "</actuator>"
+    ],
+    "description": "URDF actuator tag"
+  },
+  "urdf_calibration": {
+    "prefix": "calibration",
+    "body": [
+      "<calibration>",
+      "  <rising>$1</rising>",
+      "  <falling>$2</falling>",
+      "</calibration>"
+    ],
+    "description": "URDF joint calibration tag"
+  },
+  "urdf_safety_controller": {
+    "prefix": "safety_controller",
+    "body": [
+      "<safety_controller>",
+      "  <soft_lower_limit>$1</soft_lower_limit>",
+      "  <soft_upper_limit>$2</soft_upper_limit>",
+      "  <k_position>$3</k_position>",
+      "  <k_velocity>$4</k_velocity>",
+      "</safety_controller>"
+    ],
+    "description": "URDF safety controller tag"
+  },
+  "urdf_gazebo": {
+    "prefix": "gazebo",
+    "body": [
+      "<gazebo reference=\"$1\">",
+      "  $0",
+      "</gazebo>"
+    ],
+    "description": "Gazebo extension tag"
+  },
+  "urdf_plugin": {
+    "prefix": "plugin",
+    "body": [
+      "<plugin filename=\"$1\" name=\"$2\">",
+      "  $0",
+      "</plugin>"
+    ],
+    "description": "Gazebo plugin tag"
+  },
+  "urdf_file": {
+  "prefix": "urdf",
+  "body": [
+    "<?xml version=\"1.0\"?>",
+    "<robot name=\"$1\">",
+    "  $0",
+    "</robot>"
+  ],
+  "description": "Basic URDF file structure"
+}
+}

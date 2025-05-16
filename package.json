@@ -1,0 +1,41 @@
+{
+  "name": "urdf-snippets-kanemoda",
+  "displayName": "URDF Snippets",
+  "description": "A collection of useful VS Code snippets for URDF robot description files.",
+  "version": "1.0.0",
+  "publisher": "YOUR_PUBLISHER_NAME",
+  "engines": {
+    "vscode": "^1.50.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "urdf",
+    "robotics",
+    "ros",
+    "snippets",
+    "xml"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Efe Deniz Bağlar",
+    "email": "efedenizbaglar45@gmail.com"
+  },
+  "homepage": "https://github.com/YOUR_GITHUB_USERNAME/urdf-snippets-kanemoda",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_GITHUB_USERNAME/urdf-snippets-kanemoda.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_GITHUB_USERNAME/urdf-snippets-kanemoda/issues"
+  },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "xml",
+        "path": "./urdf-snippets.json"
+      }
+    ]
+  }
+}
