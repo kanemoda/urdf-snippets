@@ -2,7 +2,7 @@
   "name": "urdf-snippets-kanemoda",
   "displayName": "URDF Snippets",
   "description": "A collection of useful VS Code snippets for URDF robot description files.",
-  "version": "1.0.1,",
+  "version": "1.0.1",
   "publisher": "kanemoda",
   "engines": {
     "vscode": "^1.50.0"
