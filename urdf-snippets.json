@@ -155,7 +155,6 @@
     ],
     "description": "URDF texture tag"
   },
-
   "urdf_transmission": {
     "prefix": "transmission",
     "body": [
@@ -217,13 +216,13 @@
     "description": "Gazebo plugin tag"
   },
   "urdf_file": {
-  "prefix": "urdf",
-  "body": [
-    "<?xml version=\"1.0\"?>",
-    "<robot name=\"$1\">",
-    "  $0",
-    "</robot>"
-  ],
-  "description": "Basic URDF file structure"
-}
+    "prefix": "urdf",
+    "body": [
+      "<?xml version=\"1.0\"?>",
+      "<robot name=\"$1\">",
+      "  $0",
+      "</robot>"
+    ],
+    "description": "Basic URDF file structure"
+  }
 }
